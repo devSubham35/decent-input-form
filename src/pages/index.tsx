@@ -39,7 +39,7 @@ const Page = () => {
         <div className="absolute top-4 right-4">
           <button
             onClick={toggleTheme}
-            className={`p-2 rounded-full ${isDarkTheme ? 'bg-yellow-400' : 'bg-gray-800'}`}
+            className={`w-20 h-20 flex justify-center items-center rounded-full text-[30px] ${isDarkTheme ? 'bg-yellow-400' : 'bg-gray-800'}`}
           >
             {isDarkTheme ? <FaSun className="text-gray-800" /> : <FaMoon className="text-yellow-400" />}
           </button>
@@ -59,7 +59,7 @@ const Page = () => {
                 label="User Name"
                 placeholder="Enter Your email"
                 suffix='.com'
-                icon={<FaUser />}
+                icon={<FaUser className='text-[22px]'/>}
                 setTheme={isDarkTheme ? 'dark' : 'light'}
                 validationMessage={formik.errors.userName}
                 isError={formik.touched.userName && !!formik.errors.userName}
@@ -73,7 +73,7 @@ const Page = () => {
                 name="password"
                 label="Password"
                 placeholder="Enter your Password"
-                icon={<RiGitRepositoryPrivateFill />}
+                icon={<RiGitRepositoryPrivateFill className='text-[22px]' />}
                 setTheme={isDarkTheme ? 'dark' : 'light'}
                 validationMessage={formik.errors.password}
                 isError={formik.touched.password && !!formik.errors.password}
