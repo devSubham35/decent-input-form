@@ -1,2 +1,1 @@
-# decent-input-form
-Create a simple form using this awsome decent-input npm develop by devSubham35
+### This is a basic form demo using decent-input npm package
